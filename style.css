@@ -1,0 +1,56 @@
+        body{
+            font-family: "Poppins", sans-serif;
+            }
+        #course{
+            width:100%;
+            border: none;
+        }
+        #btn{
+            width:100%;
+            background-color: aqua;
+        }
+        .form{
+            width:25%;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        #table{
+            width:100%;
+        }
+        #delete{
+            width:100%;
+            background-color: red;
+        }
+        #name{
+            width:95%;
+            border:none;
+            outline: none;
+        }
+        #age{
+            width:95%;
+            border:none;
+            outline: none;
+        }
+        #email{
+            width:95%;
+            border:none;
+            outline: none;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        @media screen and (max-width:600px) {
+            .form{
+                width:90%;
+            }
+            .result{
+                width:90%;
+            }
+            .email{
+                display: none;
+            }
+        }
