@@ -1,30 +1,39 @@
-# Student-form
-This repository contains my Student form webpage.
-Student Form (JavaScript Project)
+# 🚀 Registration Form with Validation
 
-This is a simple Student Form web application built using HTML, CSS, and JavaScript.
+This project is a simple and responsive Registration Form built using HTML, CSS, and JavaScript.
+It demonstrates real-time input validation, password visibility toggle, and form control logic to improve user experience.
 
-The form allows users to enter student details such as Name, Age, Gender, Course, and Email.
-When the Save button is clicked, the entered data is added to a table below the form.
+The project is beginner-friendly and helps understand DOM manipulation, event listeners, and form validation in JavaScript.
 
-Each row in the table also contains a Delete button, which allows the user to remove that specific student record.
+# 📌 Features
 
-Features
+Real-time Validation
+Displays error messages when fields are empty.
+Validates input while the user is typing.
 
-Add student details to a table
+Button Enable/Disable Logic
 
-Delete student records
+The Create button stays disabled until all conditions are satisfied.
 
-Form automatically resets after saving
+# Validation rules:
 
-Responsive design for mobile screens
+Name → Minimum 3 characters
+Email → Minimum 8 characters
+Password → Minimum 8 characters
 
-Email column hides on small screens
+# Password Visibility Toggle
 
-Technologies Used
+Click the eye icon 👁 to show the password.
+Click again to hide the password.
 
-HTML
+# Form Reset After Submission
 
-CSS
+After clicking Create, a success alert appears.
+The form resets automatically.
 
-JavaScript (DOM Manipulation)
+# 🛠 Technologies Used
+
+HTML5 → Structure of the form
+CSS3 → Styling and layout
+JavaScript (DOM) → Validation logic and interactivity
+
