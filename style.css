@@ -1,56 +1,77 @@
-        body{
+        body {
             font-family: "Poppins", sans-serif;
-            }
-        #course{
-            width:100%;
+        }
+
+        * {
+            margin : 0px;
+            padding: 0px;
+        }
+
+        input {
+            width        : 400px;
+            height       : 40px;
+            font-size    : 15px;
+            border-radius: 10px;
+            padding-left : 5px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .container {
+            display       : flex;
+            flex-direction: column;
+            gap           : 10px;
+            margin-top    : 30px;
+            margin-bottom : 30px;
+        }
+
+        .one {
+            font-size: 12px;
+            color    : red;
+        }
+
+        .Register {
+            width      : 300px;
+            height     : 40px;
+            font-size  : 20px;
+            font-weight: bold;
+        }
+
+        .main {
+            background-color: aquamarine;
+            width           : fit-content;
+            display         : flex;
+            flex-direction  : column;
+            align-items     : center;
+            padding         : 20px;
+            border-radius   : 20px;
+        }
+
+        .Whole {
+            display         : flex;
+            justify-content : center;
+            align-items     : center;
+            height          : 100vh;
+            background-color: blueviolet;
+        }
+
+        #imp {
+            background-color: white;
+            border-radius   : 10px;
+            border          : black 2px solid;
+        }
+
+        #password {
+            width : 370px;
             border: none;
         }
-        #btn{
-            width:100%;
-            background-color: aqua;
+
+        #two {
+            color: blue;
         }
-        .form{
-            width:25%;
-            margin-top: 30px;
-            margin-bottom: 50px;
-        }
-        #table{
-            width:100%;
-        }
-        #delete{
-            width:100%;
-            background-color: red;
-        }
-        #name{
-            width:95%;
-            border:none;
-            outline: none;
-        }
-        #age{
-            width:95%;
-            border:none;
-            outline: none;
-        }
-        #email{
-            width:95%;
-            border:none;
-            outline: none;
-        }
-        .main{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        @media screen and (max-width:600px) {
-            .form{
-                width:90%;
-            }
-            .result{
-                width:90%;
-            }
-            .email{
-                display: none;
-            }
+
+        #two:hover {
+            cursor: pointer;
         }
