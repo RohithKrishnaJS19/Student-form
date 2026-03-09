@@ -1,20 +1,67 @@
-var a=document.getElementById("name")
-var b=document.getElementById("age")
-var d=document.getElementById("course")
-var e=document.getElementById("email")
+var a = document.getElementById("name")
+var b = document.getElementById("email")
+var c = document.getElementById("password")
 
-var f=document.getElementById("table2")
-var g=document.getElementById("One")
-function Save()
-{
-    var c=document.querySelector('input[name="Gender"]:checked')
-    var row=document.createElement("tr")
-    row.innerHTML=`<td>${a.value}</td><td>${b.value}</td><td>${c.value}</td><td>${d.value}</td><td class="email">${e.value}</td><td><button id=delete onclick="Delete(this)">Delete</button></td>`
-    f.append(row)
-    g.reset()
-}
+var d = document.getElementById("Ername")
+var e = document.getElementById("Eremail")
+var f = document.getElementById("Erpassword")
 
-function Delete(btn)
-{
-    btn.closest("tr").remove()
+var g = document.getElementById("eye")
+var h = document.getElementById("btn")
+var i = document.getElementById("form")
+h.disabled = true
+
+d.style.display = "none"
+e.style.display = "none"
+f.style.display = "none"
+
+a.addEventListener("input", function () {
+    if (a.value == "") {
+        d.style.display = "block"
+    }
+    else {
+        d.style.display = "none"
+    }
+    checked()
+})
+b.addEventListener("input", function () {
+    if (b.value == "") {
+        e.style.display = "block"
+    }
+    else {
+        e.style.display = "none"
+    }
+    checked()
+})
+c.addEventListener("input", function () {
+    if (c.value == "") {
+        f.style.display = "block"
+    }
+    else {
+        f.style.display = "none"
+    }
+    checked()
+})
+
+g.addEventListener("click", function () {
+    if (c.type == "password") {
+        c.type = "text"
+    }
+    else {
+        c.type = "password"
+    }
+})
+
+function checked() {
+    if (a.value.length >= 3 && b.value.length >= 8 && c.value.length >= 8) {
+        h.disabled = false
+    }
+    else {
+        h.disabled = true
+    }
 }
+h.addEventListener("click", function () {
+    alert("Account created Successfully🎉")
+    i.reset()
+    h.disabled = true
+})
